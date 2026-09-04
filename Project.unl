@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<lab name="Project" version="1" scripttimeout="300" lock="0">
+  <topology>
+    <nodes>
+      <node id="1" name="VPC1" type="vpcs" template="vpcs" image="" ethernet="1" delay="0" icon="PC-2D-Desktop-Generic-S.svg" config="0" left="1446" top="732">
+        <interface id="0" name="eth0" type="ethernet" network_id="39"/>
+      </node>
+      <node id="2" name="VPC2" type="vpcs" template="vpcs" image="" ethernet="1" delay="0" icon="PC-2D-Desktop-Generic-S.svg" config="0" left="1506" top="732">
+        <interface id="0" name="eth0" type="ethernet" network_id="40"/>
+      </node>
+      <node id="3" name="VPC3" type="vpcs" template="vpcs" image="" ethernet="1" delay="0" icon="PC-2D-Desktop-Generic-S.svg" config="0" left="1566" top="732">
+        <interface id="0" name="eth0" type="ethernet" network_id="41"/>
+      </node>
+      <node id="4" name="VPC4" type="vpcs" template="vpcs" image="" ethernet="1" delay="0" icon="PC-2D-Desktop-Generic-S.svg" config="0" left="1626" top="732">
+        <interface id="0" name="eth0" type="ethernet" network_id="42"/>
+      </node>
+      <node id="5" name="VPC5" type="vpcs" template="vpcs" image="" ethernet="1" delay="0" icon="PC-2D-Desktop-Generic-S.svg" config="0" left="1686" top="732">
+        <interface id="0" name="eth0" type="ethernet" network_id="43"/>
+      </node>
+      <node id="6" name="VPC6" type="vpcs" template="vpcs" image="" ethernet="1" delay="0" icon="PC-2D-Desktop-Generic-S.svg" config="0" left="1080" top="738">
+        <interface id="0" name="eth0" type="ethernet" network_id="44"/>
+      </node>
+      <node id="7" name="VPC7" type="vpcs" template="vpcs" image="" ethernet="1" delay="0" icon="PC-2D-Desktop-Generic-S.svg" config="0" left="1140" top="738">
+        <interface id="0" name="eth0" type="ethernet" network_id="45"/>
+      </node>
+      <node id="8" name="VPC8" type="vpcs" template="vpcs" image="" ethernet="1" delay="0" icon="PC-2D-Desktop-Generic-S.svg" config="0" left="1200" top="738">
+        <interface id="0" name="eth0" type="ethernet" network_id="46"/>
+      </node>
+      <node id="9" name="VPC9" type="vpcs" template="vpcs" image="" ethernet="1" delay="0" icon="PC-2D-Desktop-Generic-S.svg" config="0" left="1260" top="738">
+        <interface id="0" name="eth0" type="ethernet" network_id="47"/>
+      </node>
+      <node id="10" name="VPC10" type="vpcs" template="vpcs" image="" ethernet="1" delay="0" icon="PC-2D-Desktop-Generic-S.svg" config="0" left="1320" top="738">
+        <interface id="0" name="eth0" type="ethernet" network_id="48"/>
+      </node>
+      <node id="11" name="VPC11" type="vpcs" template="vpcs" image="" ethernet="1" delay="0" icon="PC-2D-Desktop-Generic-S.svg" config="0" left="690" top="732">
+        <interface id="0" name="eth0" type="ethernet" network_id="49"/>
+      </node>
+      <node id="12" name="VPC12" type="vpcs" template="vpcs" image="" ethernet="1" delay="0" icon="PC-2D-Desktop-Generic-S.svg" config="0" left="750" top="732">
+        <interface id="0" name="eth0" type="ethernet" network_id="50"/>
+      </node>
+      <node id="13" name="VPC13" type="vpcs" template="vpcs" image="" ethernet="1" delay="0" icon="PC-2D-Desktop-Generic-S.svg" config="0" left="810" top="732">
+        <interface id="0" name="eth0" type="ethernet" network_id="51"/>
+      </node>
+      <node id="14" name="VPC14" type="vpcs" template="vpcs" image="" ethernet="1" delay="0" icon="PC-2D-Desktop-Generic-S.svg" config="0" left="870" top="732">
+        <interface id="0" name="eth0" type="ethernet" network_id="52"/>
+      </node>
+      <node id="15" name="VPC15" type="vpcs" template="vpcs" image="" ethernet="1" delay="0" icon="PC-2D-Desktop-Generic-S.svg" config="0" left="930" top="732">
+        <interface id="0" name="eth0" type="ethernet" network_id="53"/>
+      </node>
+      <node id="27" name="proxmox1" type="qemu" template="linux" image="linux-proxmox1" console="vnc" cpu="7" cpulimit="0" ram="10240" ethernet="6" uuid="d0da4e77-6b15-42b1-a595-0d44b69534b7" firstmac="00:50:00:00:1b:00" qemu_options="-machine type=pc,accel=kvm -vga std -usbdevice tablet -boot order=cd -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" qemu_nic="virtio-net-pci" delay="0" icon="Server-2D-Linux-S.svg" config="0" left="54" top="324">
+        <interface id="0" name="e0" type="ethernet" network_id="1"/>
+        <interface id="1" name="e1" type="ethernet" network_id="5"/>
+        <interface id="2" name="e2" type="ethernet" network_id="6"/>
+        <interface id="3" name="e3" type="ethernet" network_id="17"/>
+        <interface id="4" name="e4" type="ethernet" network_id="18"/>
+      </node>
+      <node id="28" name="proxmox2" type="qemu" template="linux" image="linux-proxmox2" console="vnc" cpu="7" cpulimit="0" ram="10240" ethernet="6" uuid="df606e27-19e4-4a75-bc28-afa9130125c0" firstmac="00:50:00:00:1c:00" qemu_options="-machine type=pc,accel=kvm -vga std -usbdevice tablet -boot order=cd -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" qemu_nic="virtio-net-pci" delay="0" icon="Server-2D-Linux-S.svg" config="0" left="213" top="528">
+        <interface id="0" name="e0" type="ethernet" network_id="2"/>
+        <interface id="1" name="e1" type="ethernet" network_id="5"/>
+        <interface id="2" name="e2" type="ethernet" network_id="7"/>
+        <interface id="3" name="e3" type="ethernet" network_id="23"/>
+        <interface id="4" name="e4" type="ethernet" network_id="24"/>
+      </node>
+      <node id="29" name="proxmox3" type="qemu" template="linux" image="linux-proxmox3" console="vnc" cpu="5" cpulimit="0" ram="5120" ethernet="6" uuid="f1a35f7f-b83f-48b6-88f4-b4ce8add0d6a" firstmac="00:50:00:00:1d:00" qemu_options="-machine type=pc,accel=kvm -vga std -usbdevice tablet -boot order=cd -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" qemu_nic="virtio-net-pci" delay="0" icon="Server-2D-Linux-S.svg" config="0" left="432" top="321">
+        <interface id="0" name="e0" type="ethernet" network_id="3"/>
+        <interface id="1" name="e1" type="ethernet" network_id="7"/>
+        <interface id="2" name="e2" type="ethernet" network_id="6"/>
+        <interface id="3" name="e3" type="ethernet" network_id="25"/>
+        <interface id="4" name="e4" type="ethernet" network_id="26"/>
+      </node>
+      <node id="30" name="SWM1" type="iol" template="iol" image="i86bi_linux_l2-ipbasek9-ms.high_iron_aug9_2017b.bin" ethernet="2" nvram="1024" ram="1024" serial="0" console="" delay="0" icon="Switch.png" config="0" left="225" top="237">
+        <interface id="0" name="e0/0" type="ethernet" network_id="4"/>
+        <interface id="16" name="e0/1" type="ethernet" network_id="1"/>
+        <interface id="32" name="e0/2" type="ethernet" network_id="2"/>
+        <interface id="48" name="e0/3" type="ethernet" network_id="3"/>
+        <interface id="1" name="e1/0" type="ethernet" network_id="22"/>
+        <interface id="17" name="e1/1" type="ethernet" network_id="16"/>
+        <interface id="33" name="e1/2" type="ethernet" network_id="21"/>
+      </node>
+      <node id="33" name="R1" type="dynamips" template="c7200" image="c7200-adventerprisek9_sna-mz.150-1.M.image" idlepc="0x62f21000" nvram="128" ram="256" console="" delay="0" icon="Router-2D-Gen-Dark-S.svg" config="0" left="792" top="129">
+        <slot id="1" module="PA-FE-TX"/>
+        <slot id="2" module="PA-FE-TX"/>
+        <slot id="3" module="PA-FE-TX"/>
+        <slot id="4" module="PA-FE-TX"/>
+        <interface id="0" name="fa0/0" type="ethernet" network_id="10"/>
+        <interface id="16" name="fa1/0" type="ethernet" network_id="12"/>
+        <interface id="32" name="fa2/0" type="ethernet" network_id="8"/>
+        <interface id="48" name="fa3/0" type="ethernet" network_id="9"/>
+        <interface id="64" name="fa4/0" type="ethernet" network_id="14"/>
+      </node>
+      <node id="34" name="R2" type="dynamips" template="c7200" image="c7200-adventerprisek9_sna-mz.150-1.M.image" idlepc="0x62f21000" nvram="128" ram="256" console="" delay="0" icon="Router-2D-Gen-Dark-S.svg" config="0" left="1299" top="126">
+        <slot id="1" module="PA-FE-TX"/>
+        <slot id="2" module="PA-FE-TX"/>
+        <slot id="3" module="PA-FE-TX"/>
+        <slot id="4" module="PA-FE-TX"/>
+        <interface id="0" name="fa0/0" type="ethernet" network_id="11"/>
+        <interface id="16" name="fa1/0" type="ethernet" network_id="13"/>
+        <interface id="32" name="fa2/0" type="ethernet" network_id="15"/>
+        <interface id="48" name="fa3/0" type="ethernet" network_id="19"/>
+        <interface id="64" name="fa4/0" type="ethernet" network_id="20"/>
+      </node>
+      <node id="31" name="SW0" type="iol" template="iol" image="i86bi_linux_l2-ipbasek9-ms.high_iron_aug9_2017b.bin" ethernet="4" nvram="1024" ram="1024" serial="0" console="" delay="0" icon="Switch.png" config="0" left="552" top="546">
+        <interface id="0" name="e0/0" type="ethernet" network_id="27"/>
+        <interface id="16" name="e0/1" type="ethernet" network_id="33"/>
+        <interface id="32" name="e0/2" type="ethernet" network_id="37"/>
+        <interface id="48" name="e0/3" type="ethernet" network_id="38"/>
+      </node>
+      <node id="32" name="SW32" type="iol" template="iol" image="i86bi_linux_l2-ipbasek9-ms.high_iron_aug9_2017b.bin" ethernet="4" nvram="1024" ram="1024" serial="0" console="" delay="0" icon="Switch.png" config="0" left="789" top="546">
+        <interface id="0" name="e0/0" type="ethernet" network_id="30"/>
+        <interface id="16" name="e0/1" type="ethernet" network_id="34"/>
+        <interface id="32" name="e0/2" type="ethernet" network_id="49"/>
+        <interface id="48" name="e0/3" type="ethernet" network_id="50"/>
+        <interface id="1" name="e1/0" type="ethernet" network_id="51"/>
+        <interface id="17" name="e1/1" type="ethernet" network_id="52"/>
+        <interface id="33" name="e1/2" type="ethernet" network_id="53"/>
+      </node>
+      <node id="36" name="SW36" type="iol" template="iol" image="i86bi_linux_l2-ipbasek9-ms.high_iron_aug9_2017b.bin" ethernet="4" nvram="1024" ram="1024" serial="0" console="" delay="0" icon="Switch.png" config="0" left="1131" top="549">
+        <interface id="0" name="e0/0" type="ethernet" network_id="31"/>
+        <interface id="16" name="e0/1" type="ethernet" network_id="35"/>
+        <interface id="32" name="e0/2" type="ethernet" network_id="44"/>
+        <interface id="48" name="e0/3" type="ethernet" network_id="45"/>
+        <interface id="1" name="e1/0" type="ethernet" network_id="46"/>
+        <interface id="17" name="e1/1" type="ethernet" network_id="47"/>
+        <interface id="33" name="e1/2" type="ethernet" network_id="48"/>
+      </node>
+      <node id="37" name="SW37" type="iol" template="iol" image="i86bi_linux_l2-ipbasek9-ms.high_iron_aug9_2017b.bin" ethernet="4" nvram="1024" ram="1024" serial="0" console="" delay="0" icon="Switch.png" config="0" left="1533" top="555">
+        <interface id="0" name="e0/0" type="ethernet" network_id="32"/>
+        <interface id="16" name="e0/1" type="ethernet" network_id="36"/>
+        <interface id="32" name="e0/2" type="ethernet" network_id="39"/>
+        <interface id="48" name="e0/3" type="ethernet" network_id="40"/>
+        <interface id="1" name="e1/0" type="ethernet" network_id="41"/>
+        <interface id="17" name="e1/1" type="ethernet" network_id="42"/>
+        <interface id="33" name="e1/2" type="ethernet" network_id="43"/>
+      </node>
+      <node id="38" name="SWL2" type="iol" template="iol" image="i86bi_LinuxL2-AdvEnterpriseK9-M_152_May_2018.bin" ethernet="4" nvram="1024" ram="1024" serial="0" console="" delay="0" icon="Switch L32.png" config="0" left="1305" top="345">
+        <interface id="0" name="e0/0" type="ethernet" network_id="8"/>
+        <interface id="16" name="e0/1" type="ethernet" network_id="14"/>
+        <interface id="32" name="e0/2" type="ethernet" network_id="15"/>
+        <interface id="48" name="e0/3" type="ethernet" network_id="20"/>
+        <interface id="1" name="e1/0" type="ethernet" network_id="21"/>
+        <interface id="17" name="e1/1" type="ethernet" network_id="18"/>
+        <interface id="33" name="e1/2" type="ethernet" network_id="24"/>
+        <interface id="49" name="e1/3" type="ethernet" network_id="26"/>
+        <interface id="2" name="e2/0" type="ethernet" network_id="28"/>
+        <interface id="18" name="e2/1" type="ethernet" network_id="29"/>
+        <interface id="3" name="e3/0" type="ethernet" network_id="33"/>
+        <interface id="19" name="e3/1" type="ethernet" network_id="34"/>
+        <interface id="35" name="e3/2" type="ethernet" network_id="35"/>
+        <interface id="51" name="e3/3" type="ethernet" network_id="36"/>
+      </node>
+      <node id="25" name="SWL1" type="iol" template="iol" image="i86bi_LinuxL2-AdvEnterpriseK9-M_152_May_2018.bin" ethernet="4" nvram="1024" ram="1024" serial="0" console="" delay="0" icon="Switch L32.png" config="0" left="795" top="351">
+        <interface id="0" name="e0/0" type="ethernet" network_id="12"/>
+        <interface id="16" name="e0/1" type="ethernet" network_id="9"/>
+        <interface id="32" name="e0/2" type="ethernet" network_id="13"/>
+        <interface id="48" name="e0/3" type="ethernet" network_id="19"/>
+        <interface id="1" name="e1/0" type="ethernet" network_id="16"/>
+        <interface id="17" name="e1/1" type="ethernet" network_id="17"/>
+        <interface id="33" name="e1/2" type="ethernet" network_id="23"/>
+        <interface id="49" name="e1/3" type="ethernet" network_id="25"/>
+        <interface id="2" name="e2/0" type="ethernet" network_id="28"/>
+        <interface id="18" name="e2/1" type="ethernet" network_id="29"/>
+        <interface id="3" name="e3/0" type="ethernet" network_id="27"/>
+        <interface id="19" name="e3/1" type="ethernet" network_id="30"/>
+        <interface id="35" name="e3/2" type="ethernet" network_id="31"/>
+        <interface id="51" name="e3/3" type="ethernet" network_id="32"/>
+      </node>
+      <node id="35" name="Thin_client_1" type="qemu" template="linux" image="linux-debian1" console="vnc" cpu="1" cpulimit="0" ram="768" ethernet="1" uuid="b07ec5e2-f72f-4033-9902-87dc16569fab" firstmac="00:50:00:00:23:00" qemu_options="-machine type=pc,accel=kvm -vga std -usbdevice tablet -boot order=cd -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" qemu_nic="virtio-net-pci" delay="0" icon="PC-2D-Desktop-Generic-S.svg" config="0" left="573" top="726">
+        <interface id="0" name="e0" type="ethernet" network_id="38"/>
+      </node>
+      <node id="39" name="kali" type="qemu" template="linux" image="linux-kali1" console="vnc" cpu="6" cpulimit="0" ram="8192" ethernet="3" uuid="90833c58-9b84-4766-bd98-c17af82e65a9" firstmac="00:50:00:00:27:00" qemu_options="-machine type=pc,accel=kvm -vga std -usbdevice tablet -boot order=cd -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" qemu_nic="virtio-net-pci" delay="0" icon="PC-2D-Desktop-Linux-S.svg" config="0" left="237" top="81">
+        <interface id="1" name="e1" type="ethernet" network_id="4"/>
+        <interface id="2" name="e2" type="ethernet" network_id="22"/>
+      </node>
+      <node id="41" name="Thin_client_2" type="qemu" template="linux" image="linux-debian2" console="vnc" cpu="2" cpulimit="0" ram="2048" ethernet="1" uuid="925ea68b-2726-4f66-96d2-2a69adf57185" firstmac="00:50:00:00:29:00" qemu_options="-machine type=pc,accel=kvm -vga std -usbdevice tablet -boot order=cd -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" qemu_nic="virtio-net-pci" delay="0" icon="PC-2D-Desktop-Generic-S.svg" config="0" left="486" top="729">
+        <interface id="0" name="e0" type="ethernet" network_id="37"/>
+      </node>
+    </nodes>
+    <networks>
+      <network id="1" type="bridge" name="Net-proxmox1iface_0" left="459" top="397" visibility="0" icon="lan.png"/>
+      <network id="2" type="bridge" name="Net-proxmox2iface_0" left="693" top="424" visibility="0" icon="lan.png"/>
+      <network id="3" type="bridge" name="Net-proxmox3iface_0" left="915" top="415" visibility="0" icon="lan.png"/>
+      <network id="5" type="bridge" name="Net-proxmox1iface_1" left="468" top="427" visibility="0" icon="lan.png"/>
+      <network id="10" type="pnet0" name="ISP 1" left="804" top="15" visibility="1" icon="Cloud-2D-Grey-S.svg"/>
+      <network id="11" type="pnet0" name="ISP 2" left="1299" top="18" visibility="1" icon="Cloud-2D-Grey-S.svg"/>
+      <network id="8" type="bridge" name="Net-SWL2iface_0" left="1106" top="505" visibility="0" icon="lan.png"/>
+      <network id="14" type="bridge" name="Net-SWL2iface_16" left="1106" top="505" visibility="0" icon="lan.png"/>
+      <network id="21" type="bridge" name="Net-SWL2iface_1" left="1208" top="398" visibility="0" icon="lan.png"/>
+      <network id="33" type="bridge" name="Net-SWL2iface_3" left="1154" top="419" visibility="0" icon="lan.png"/>
+      <network id="34" type="bridge" name="Net-SWL2iface_19" left="1154" top="419" visibility="0" icon="lan.png"/>
+      <network id="35" type="bridge" name="Net-SWL2iface_35" left="1097" top="422" visibility="0" icon="lan.png"/>
+      <network id="36" type="bridge" name="Net-SWL2iface_51" left="1097" top="422" visibility="0" icon="lan.png"/>
+      <network id="12" type="bridge" name="Net-SWL1iface_0" left="782" top="458" visibility="0" icon="lan.png"/>
+      <network id="9" type="bridge" name="Net-SWL1iface_16" left="782" top="517" visibility="0" icon="lan.png"/>
+      <network id="16" type="bridge" name="Net-SWL1iface_1" left="782" top="395" visibility="0" icon="lan.png"/>
+      <network id="27" type="bridge" name="Net-SWL1iface_3" left="839" top="425" visibility="0" icon="lan.png"/>
+      <network id="28" type="bridge" name="Net-SWL1iface_2" left="839" top="425" visibility="0" icon="lan.png"/>
+      <network id="29" type="bridge" name="Net-SWL1iface_18" left="839" top="425" visibility="0" icon="lan.png"/>
+      <network id="30" type="bridge" name="Net-SWL1iface_19" left="839" top="425" visibility="0" icon="lan.png"/>
+      <network id="31" type="bridge" name="Net-SWL1iface_35" left="839" top="425" visibility="0" icon="lan.png"/>
+      <network id="32" type="bridge" name="Net-SWL1iface_51" left="894" top="425" visibility="0" icon="lan.png"/>
+      <network id="6" type="bridge" name="Net-proxmox1iface_2" left="215" top="287" visibility="0" icon="lan.png"/>
+      <network id="7" type="bridge" name="Net-proxmox3iface_1" left="819" top="284" visibility="0" icon="lan.png"/>
+      <network id="17" type="bridge" name="Net-proxmox1iface_3" left="288" top="287" visibility="0" icon="lan.png"/>
+      <network id="18" type="bridge" name="Net-proxmox1iface_4" left="157" top="287" visibility="0" icon="lan.png"/>
+      <network id="23" type="bridge" name="Net-proxmox2iface_3" left="335" top="488" visibility="0" icon="lan.png"/>
+      <network id="24" type="bridge" name="Net-proxmox2iface_4" left="175" top="488" visibility="0" icon="lan.png"/>
+      <network id="25" type="bridge" name="Net-proxmox3iface_3" left="559" top="284" visibility="0" icon="lan.png"/>
+      <network id="26" type="bridge" name="Net-proxmox3iface_4" left="414" top="317" visibility="0" icon="lan.png"/>
+      <network id="4" type="bridge" name="Net-kaliiface_1" left="687" top="112" visibility="0" icon="lan.png"/>
+      <network id="22" type="bridge" name="Net-kaliiface_2" left="687" top="112" visibility="0" icon="lan.png"/>
+      <network id="13" type="bridge" name="Net-R2iface_16" left="1446" top="190" visibility="0" icon="lan.png"/>
+      <network id="15" type="bridge" name="Net-R2iface_32" left="1446" top="190" visibility="0" icon="lan.png"/>
+      <network id="19" type="bridge" name="Net-R2iface_48" left="1446" top="190" visibility="0" icon="lan.png"/>
+      <network id="20" type="bridge" name="Net-R2iface_64" left="1428" top="172" visibility="0" icon="lan.png"/>
+      <network id="38" type="bridge" name="Net-Thin_client_1iface_0" left="361" top="189" visibility="0" icon="lan.png"/>
+      <network id="39" type="bridge" name="Net-VPC1iface_0" left="2133" top="1108" visibility="0" icon="lan.png"/>
+      <network id="40" type="bridge" name="Net-VPC2iface_0" left="2193" top="1108" visibility="0" icon="lan.png"/>
+      <network id="41" type="bridge" name="Net-VPC3iface_0" left="2253" top="1108" visibility="0" icon="lan.png"/>
+      <network id="42" type="bridge" name="Net-VPC4iface_0" left="2313" top="1108" visibility="0" icon="lan.png"/>
+      <network id="43" type="bridge" name="Net-VPC5iface_0" left="2373" top="1108" visibility="0" icon="lan.png"/>
+      <network id="44" type="bridge" name="Net-VPC6iface_0" left="1872" top="1102" visibility="0" icon="lan.png"/>
+      <network id="45" type="bridge" name="Net-VPC7iface_0" left="1932" top="1102" visibility="0" icon="lan.png"/>
+      <network id="46" type="bridge" name="Net-VPC8iface_0" left="1992" top="1102" visibility="0" icon="lan.png"/>
+      <network id="47" type="bridge" name="Net-VPC9iface_0" left="2052" top="1102" visibility="0" icon="lan.png"/>
+      <network id="48" type="bridge" name="Net-VPC10iface_0" left="2112" top="1102" visibility="0" icon="lan.png"/>
+      <network id="49" type="bridge" name="Net-VPC11iface_0" left="1482" top="1096" visibility="0" icon="lan.png"/>
+      <network id="50" type="bridge" name="Net-VPC12iface_0" left="1542" top="1096" visibility="0" icon="lan.png"/>
+      <network id="51" type="bridge" name="Net-VPC13iface_0" left="1602" top="1096" visibility="0" icon="lan.png"/>
+      <network id="52" type="bridge" name="Net-VPC14iface_0" left="1662" top="1096" visibility="0" icon="lan.png"/>
+      <network id="53" type="bridge" name="Net-VPC15iface_0" left="1722" top="1096" visibility="0" icon="lan.png"/>
+      <network id="37" type="bridge" name="Net-Thin_client_2iface_0" left="1278" top="1093" visibility="0" icon="lan.png"/>
+    </networks>
+  </topology>
+</lab>
